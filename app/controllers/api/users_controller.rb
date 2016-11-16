@@ -1,5 +1,5 @@
 module Api
   # app/controllers/user_controller.rb
-  class UsersController < JSONAPI::ResourceController
+  class UsersController < ApplicationController
   end
 end

@@ -3,5 +3,6 @@ module Api
   class WebsiteResource < JSONAPI::Resource
     attribute :name
     has_one :user
+    has_many :contacts
   end
 end

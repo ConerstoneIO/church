@@ -6,6 +6,7 @@ class User < ApplicationRecord
   validates_presence_of :password
   validates_uniqueness_of :email
   has_many :websites
+  has_many :church_positions
 
   def set_auth_token
     if self.authentication_token.blank?

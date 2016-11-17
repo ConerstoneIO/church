@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   namespace :api do
     jsonapi_resources :users
     jsonapi_resources :websites
+    jsonapi_resources :church_positions
+    jsonapi_resources :contacts
     post 'token' => 'sessions#create'
     post 'registration' => 'sessions#sign_up'
   end

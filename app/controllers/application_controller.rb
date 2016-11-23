@@ -1,5 +1,6 @@
 # app/controller/application_controller.rb
 class ApplicationController < JSONAPI::ResourceController
+  before_action :authorize_user
   def current_user
     token = request.headers['X-CSRF-Token']
     User.find_by(authentication_token: token)

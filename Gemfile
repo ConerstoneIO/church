@@ -11,6 +11,7 @@ gem 'jsonapi-resources', '~> 0.9.0.beta1'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
+gem 'carrierwave'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

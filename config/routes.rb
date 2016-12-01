@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     jsonapi_resources :websites
     jsonapi_resources :church_positions
     jsonapi_resources :contacts
+    jsonapi_resources :slider_pictures
     post 'token' => 'sessions#create'
     post 'registration' => 'sessions#sign_up'
   end

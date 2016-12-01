@@ -4,5 +4,6 @@ module Api
     attribute :name
     has_one :user
     has_many :contacts
+    has_many :slider_pictures
   end
 end

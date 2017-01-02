@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161201043018) do
+ActiveRecord::Schema.define(version: 20170102200351) do
 
   create_table "church_positions", force: :cascade do |t|
     t.string   "title"
@@ -53,6 +53,10 @@ ActiveRecord::Schema.define(version: 20161201043018) do
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean  "contact_us"
+    t.boolean  "ministries"
+    t.boolean  "beliefs"
+    t.boolean  "about_us"
     t.index ["user_id"], name: "index_websites_on_user_id"
   end
 
